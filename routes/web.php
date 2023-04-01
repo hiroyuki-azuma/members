@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestsController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,9 @@ Route::get('/hello', function () {
 
 // ここは追記したよ
 Route::get('/test', [TestsController::class, 'test']);
+
+// ここもjyunkoアプリ用に追記したよ
+Route::resource('post', PostController::class);
 
 
 Route::get('/dashboard', function () {
