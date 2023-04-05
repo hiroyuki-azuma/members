@@ -12,6 +12,9 @@
         <div class="mx-4 sm:p-8">
             <div class="px-10 mt-4">
 
+            <!-- 編集ボタンの追加 -->
+            <a href="{{route('post.edit', $post)}}"><x-primary-button class="bg-teal-700 float-right">編集</x-primary-button></a>
+            
                 <div class="bg-white w-full  rounded-2xl px-10 py-8 shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="mt-4">
                         <h1 class="text-lg text-gray-700 font-semibold">
